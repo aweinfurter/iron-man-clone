@@ -1,0 +1,47 @@
+.details {
+
+    display: none;
+    position: relative;
+
+    &--is--active {
+        display: block;
+    }
+
+    &__tittle {
+        padding-right: 24px;
+        padding-bottom: 24px;
+    }
+    
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        &__objects {
+
+            &__item {
+                padding-bottom: 8px;
+            }
+        }
+
+        &__staff {
+
+            &__item {
+                padding-bottom: 8px;
+            }
+        }
+
+        &__synopsis {
+            max-width: 767px;
+            padding-right: 12px;
+        }
+
+        &--grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            & img {
+                height: 20px;
+            }
+        }
+    }
+}

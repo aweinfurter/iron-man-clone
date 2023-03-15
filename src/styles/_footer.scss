@@ -1,0 +1,43 @@
+@use 'variaveis';
+
+.footer {
+    background-color: variaveis.$bgcolor;
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    &__tittle {
+        padding-top: 19px;
+
+        & img {
+            height: 48px;
+        }
+    }
+
+    &__links {
+        max-width: 500px;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &__item {
+            text-decoration: none;
+            padding: 1px 6px 1px 6px;
+            margin: 11px 5px 10px 5px;
+        }
+    }
+
+    &__about {
+        max-width: 500px;
+        text-align: center;
+        padding: 0 25px;
+    }
+
+    &__disclaimer {
+        padding-top: 8px;
+        padding-bottom: 24px;
+    }
+}

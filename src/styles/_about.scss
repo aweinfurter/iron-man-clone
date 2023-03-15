@@ -1,0 +1,46 @@
+@use 'variaveis';
+
+.about {
+    margin-bottom: 56px;
+    position: relative;
+    display: block;
+    max-width: 874px;
+
+    &__content {
+
+        &__tittle {
+            margin-top: 16px;
+            margin-bottom: 8px;  
+        }
+
+        &__disclaimer {
+            padding-top: 8px;
+            padding-bottom: 16px;
+            color: variaveis.$secondaryColor;
+        }
+
+        &__options {
+            display: flex;
+            margin-bottom: 5px;
+            align-items: center;
+
+            &__item {
+                height: 20px;
+                margin-right: 4px;
+
+                &:nth-child(2) {
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        &__buttons {
+            display: flex;
+            margin-top: 32px;
+        }
+
+        &__text {
+            padding: 16px 0;
+        }
+    }
+}

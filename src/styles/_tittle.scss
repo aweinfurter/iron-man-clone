@@ -1,0 +1,19 @@
+@use 'variaveis';
+
+.tittle {
+    padding-top: 56px;
+    padding-bottom: 16px;
+    min-height: 170px;
+    margin: 0 auto;
+    position: relative;
+    align-items: flex-end;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+
+    &__image {
+        max-width: 341px;
+        min-width: 100px;
+        width: 35vw;
+    }
+}

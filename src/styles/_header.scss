@@ -1,0 +1,75 @@
+@use 'variaveis';
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    max-height: 72px;
+    background-image: linear-gradient(to bottom, #000, transparent);
+    z-index: 1;
+
+    &__logo {
+        height: 48px;
+        width: 100%;
+        padding-top: 8px;
+        margin-top: 10px;
+    }
+
+
+    &__container {
+        padding: 0 36px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__nav {
+        display: flex;
+    }
+
+    &__button {
+        height: 56px;
+        display: flex;
+        padding: 0 16px;
+        font-size: 15px;
+        font-weight: bold;
+        background-color: transparent;
+        color: variaveis.$primaryColor;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border: none;
+        border-top: 2px solid transparent;
+        border-bottom: 2px solid transparent;
+
+        & img {
+            border-radius: 50%;
+            margin-left: 16px;
+        }
+
+        &:hover {
+            border-color: variaveis.$primaryColor;
+        }
+    }
+
+    &__links {
+        display: flex;
+        list-style: none;
+
+        &__item{
+            padding: 18px;
+            margin: 13px 0;
+            margin-left: 8px;
+            text-transform: uppercase;
+            font-weight: bold;
+            border: none;
+            border-bottom: 2px solid transparent;
+            cursor: pointer;
+            transition: border-color 0.5s ease-in-out;
+
+            &:hover {
+                border-color: variaveis.$primaryColor;
+            }
+        }
+    }
+}
